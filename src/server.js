@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const connectDB = require('./config/database');
 const userRoutes = require('./routes/userRoutes');
+const activityRoutes = require('./routes/activityRoutes');
 
 const app = express();
 
@@ -11,13 +12,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/users', userRoutes);
+app.use('/api/activities', activityRoutes);
 
 app.get('/', (req, res) => {
   res.json({
     message: 'Welcome to PulseTrack API',
     version: '1.0.0',
     endpoints: {
-      users: '/api/users'
+      users: '/api/users',
+      activities: '/api/activities'
     }
   });
 });
