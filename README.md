@@ -22,7 +22,7 @@ Backend API for PulseTrack health monitoring application. Built using Test-Drive
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Tjoseph-O/pulsetrack-backend.git
 cd pulsetrack-backend
 ```
 
@@ -202,9 +202,6 @@ Current test coverage: **180+ tests** covering:
 
 MIT
 
-## 👤 Author
-
-Your Name
 
 ## 🙏 Acknowledgments
 
